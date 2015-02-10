@@ -1,0 +1,19 @@
+.highlight {
+    background-color: #FFFF88;
+}
+
+.smallTopics{
+	font-size: 7px;
+}
+
+.smallTopicsHighLighted{
+	background-color: lightgreen;
+}
+
+.biggerFonts{
+	font-size: 16px;
+}
+
+td{
+	vertical-align:top;
+}

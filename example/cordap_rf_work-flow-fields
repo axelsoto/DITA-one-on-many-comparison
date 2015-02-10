@@ -1,0 +1,260 @@
+Work flow fields 
+  Understand the fields used when creating work flows. 
+   
+   
+	  
+		The following tables describe the
+		  fields used when creating work flows. 
+		 
+		 
+		 
+		Work flow basic details 
+		 
+			  
+				 
+				  Field 
+				   
+				 
+				 
+				  Description 
+				   
+				 
+			  
+		   
+			  
+				 
+				  Name 
+				   
+				 
+				 
+				  Use a name that identifies
+					 the general purpose of the work flow. 
+				   
+				 
+			  
+			  
+				 
+				  Description 
+				   
+				 
+				 
+				  Describe the purpose of the
+					 work flow so that, if necessary, the users can use the description to make a
+					 choice between work flows. 
+				   
+				 
+			  
+			  
+				 
+				  Product applicability 
+				   
+				 
+				 
+				  Select the product for which
+					 the work flow can be used. 
+				   
+				 
+			  
+			  
+				 
+				  Parent work flow 
+				   
+				 
+				 
+				  A parent work flow is one
+					 that can be used at the beginning of a work flow. If it is not a parent, then
+					 it is a child that can be selected during a work flow already in progression. 
+				   
+				 
+			  
+		   
+		 
+		 
+		 
+		 
+		 
+		Work flow state details 
+		 
+			  
+				 
+				  Field 
+				   
+				 
+				 
+				  Description 
+				   
+				 
+			  
+		   
+			  
+				 
+				  State 
+				   
+				 
+				 
+				  Use a name that identifies
+					 the purpose of the state. 
+				   
+				 
+			  
+			  
+				 
+				  Weight 
+				   
+				 
+				 
+				  This sets the percentage of
+					 the work package's planned hours to assign to the state. If this value is set
+					 at 50% and there are 20 planned hours for the work package, then 10 hours are
+					 assigned to this state. 
+				   
+				 
+			  
+			  
+				 
+				  Options 
+				   
+				 
+				 
+				  Standard flow 
+				   
+				 
+				 
+				  Standard work flows progress
+					 from the current state to the next state in a simple linear fashion. 
+				   
+				  There are two options for
+					 this type of work flow: 
+				   
+					  
+						Can complete
+							 work flow gives the person in this state of the work flow the
+						  option to end the work flow entirely, instead of progressing to the next state.
+						  
+						 
+					  
+					  
+						Requires
+							 approval indicates that the person in this state of the work flow
+						  to indicate their approval before the work package can proceed to the next
+						  state. 
+						 
+					  
+				   
+				   
+				 
+			  
+			  
+				 
+				  Split into child work flows 
+				   
+				 
+				 
+				  Child work flows can spilt
+					 the existing work flow into multiple work flows. 
+				   
+				  You must select from the
+					 existing child work flows, and you can opt to allow any number of assignees and
+					 optional assignments. 
+				   
+				  The parent work flow does
+					 not progress to the next state until all the assignments in the selected child
+					 work flow are complete. 
+				   
+				 
+			  
+			  
+				 
+				  Next state 
+				   
+				 
+				 
+				  Select the state to which
+					 the work flow will transition upon completion of the state currently being
+					 created. 
+				   
+				  Leave this empty for now and
+					 come back to complete once all states have been created. 
+				   
+				 
+			  
+			  
+				 
+				  Role 
+				   
+				 
+				 
+				  Select the roles that can be
+					 assigned to this state. 
+				   
+				 
+			  
+			  
+				 
+				  Pre-actions 
+				   
+				 
+				 
+				  Select actions to perform
+					 when the work package is moved to the next state. 
+				   
+				 
+			  
+		   
+		 
+		 
+		 
+		 
+		 
+		Options for approvals 
+		 
+			  
+				 
+				  Approval option 
+				   
+				 
+				 
+				  Description 
+				   
+				 
+			  
+		   
+			  
+				 
+				  Approved 
+				   
+				 
+				 
+				  The reviewer approves and no
+					 changes are required. 
+				   
+				 
+			  
+			  
+				 
+				  Approved with changes 
+				   
+				 
+				 
+				  The reviewer approves, but
+					 wants a few changes made to the content. 
+				   
+				 
+			  
+			  
+				 
+				  Changes required 
+				   
+				 
+				 
+				  The reviewer does not
+					 approve. They want changes made and to review the content again. 
+				   
+				 
+			  
+		   
+		 
+		 
+		 
+	  
+   
