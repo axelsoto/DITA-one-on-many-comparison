@@ -8,27 +8,65 @@ var lastHighlighted = -1;
 var nSentences = [];
 var currentNTopics = 2;
 
-var maxBarLength = 190;
+var maxBarLength = 160;
 var barsHeight = 10;
 
 var sentenceLCS;
 
-var granularitySentence =true;
+//change this if we are splitting topics by tags
+var granularitySentence =false;
 
 //Preprocessing variables
 var topicNames = [];
+var topicIds = [];
 var topicFiles = [];
-var pairwiseComparisonFile
+var topicMetrics = [];
+var firstTopicFirst = [];
 
-function readTopPairComparisons(pairComparisonFilePrefix,nTopics){
+function findWordsInCommon(string1,string2){
+	var list1 = string1.slice(1,string1.length-1).split(",");
+	var list2 = string2.slice(1,string2.length-1).split(",");
+	var wic = []
+	
+	list1.forEach(function(word){
+		if (list2.indexOf(word)>=0){
+			wic.push(word);
+		}
+	});
+	return wic;
+}
+
+function readTopPairComparisons(directory, topicNames, topicIds, nTopics){
+	var fileComparison;
 	for (var q=1;q<=nTopics;q++){
-		readTopPairComp(pairComparisonFilePrefix,q)
+		if (topicIds[q] > topicIds[0]){
+			fileComparison = directory + topicNames[q] + '; ' + topicNames[0]; 
+			firstTopicFirst.push(false);
+		}
+		else{
+			fileComparison = directory + topicNames[0] + '; ' + topicNames[q];
+			firstTopicFirst.push(true);
+		}
+		readTopPairComp(fileComparison,q)
 	}
 }
 
 function readTopPairComp(pairComparisonFilePrefix,indTopic){
-	d3.text(pairComparisonFilePrefix.slice(0,-4) + indTopic + pairComparisonFilePrefix.slice(-4),  function(datasetText) {
+	d3.text(pairComparisonFilePrefix + "?" + Math.floor(Math.random() * 1000), function(datasetText) {
 				pairComparisons[indTopic] = d3.tsv.parseRows(datasetText);
+				var aux=0;
+				
+				//This is due to a mistake in the files that come with one blank column for gtm
+				if (pairComparisons[1][0][LCSColumnIndex]==""){
+					LCSColumnIndex = LCSColumnIndex + 1
+					sentenceTopic1ColumnIndex = sentenceTopic1ColumnIndex + 1;
+					sentenceTopic2ColumnIndex = sentenceTopic2ColumnIndex + 1;
+					sentenceLCSColumnIndex = sentenceLCSColumnIndex + 1;
+				}
+				pairComparisons[indTopic].forEach(function(elem){
+					aux = d3.max([aux,parseFloat(elem[LCSColumnIndex])]);
+				})
+				topicMetrics.push(aux);
 		});
 }
 
@@ -64,9 +102,16 @@ var htmlClass = "sentence";
 				}
 				else{
 					//paragraph separator
-					topicBigList = topicBig.split('</p>');
-					topicSmall1List = topicSmall1.split('</p>');
-					topicSmall2List = topicSmall2.split('</p>');
+					var reParagSep = /<p>|<fig>|<tabl>|<ul>|<shortdesc>|<\/p>|<\/fig>|<\/table>|<\/ul>|<\/shortdesc>/;
+					
+					topicBigList = topicBig.split(reParagSep);
+					topicSmall1List = topicSmall1.split(reParagSep);
+					topicSmall2List = topicSmall2.split(reParagSep);
+					
+					//var reParagSepTags = /(<p>|<fig>|<tabl>|<ul>|<shortdesc>|<\/p>|<\/fig>|<\/table>|<\/ul>|<\/shortdesc>)/;
+					//topicBigListWTags = removeEmptyElements(topicBig.split(reParagSep));
+					//topicSmall1ListWTags = removeEmptyElements(topicSmall1.split(reParagSep));
+					//topicSmall2ListWTags = removeEmptyElements(topicSmall2.split(reParagSep));
 				}
 				
 				topicBigList = removeEmptyElements(topicBigList);
@@ -75,7 +120,11 @@ var htmlClass = "sentence";
 				
 				nSentences[1] = topicSmall1List.length;
 				nSentences[2] = topicSmall2List.length;
-		
+
+/*wrapElementTagToList(topicBigList, "code", "codeClass" + "_t0_");
+wrapElementTagToList(topicSmall1List, "code", "codeClass" + "_t1_");
+wrapElementTagToList(topicSmall2List, "code", "codeClass" + "_t2_");*/
+
 				wrapElementTagToList(topicBigList,htmlElement,htmlClass + "_t0_");
 				wrapElementTagToList(topicSmall1List,htmlElement,htmlClass + "_t1_");
 				wrapElementTagToList(topicSmall2List,htmlElement,htmlClass + "_t2_");
@@ -94,6 +143,8 @@ var htmlClass = "sentence";
 				
 				addTopicMetrics();
 				
+				
+				
 			});
 		});
 	});
@@ -102,7 +153,20 @@ var htmlClass = "sentence";
 function addTopicMetrics(){
 	d3.selectAll("#methodMetrics")
 	.text(function(d,i){
-		return "   Similarity: " + topicMetrics[i];//this should be read or computed from a file
+		return "Topic Similarity: " + topicMetrics[i].toFixed(3);//this should be read or computed from a file
+	});
+}
+
+function updateParagraphMetrics(paragraphMetric,smallTopicIndex,bigTopicSentenceIndex,smallTopicSentenceIndex){
+//smallTopicIndex and bigTopicIndex can be used to indicate what it is compared to what
+	d3.selectAll("#paragraphMetric")
+	.text(function(d,i){
+		if (i == smallTopicIndex){
+			return "Paragraph Similarity: " + (paragraphMetric==0? "0": paragraphMetric.toFixed(3));//this should be read or computed from a file
+		}
+		else{
+			return d3.select(this).text();
+		}
 	});
 }
 
@@ -119,7 +183,7 @@ function drawHistogramsBigTopic(){
 			}
 			maxSimValue = 0;
 			maxSimValueRow = -1;
-			if (q==2){
+			if (firstTopicFirst[q]){
 				//This is because the files were prepared in an odd manner
 				d3.range(nSentences[q]).forEach(function(elem){
 					if (maxSimValue < parseFloat(pairComparisons[q][i*nSentences[q] + elem][LCSColumnIndex])){
@@ -136,16 +200,19 @@ function drawHistogramsBigTopic(){
 					}
 				});
 			}
-			sentenceLCS[i] = sentenceLCS[i] + maxSimValue/currentNTopics;
+			//Average
+			//sentenceLCS[i] = sentenceLCS[i] + maxSimValue/currentNTopics;
+			//Max
+			sentenceLCS[i] = d3.max([sentenceLCS[i] , maxSimValue]);
 		});
 	}
 	scaleBars = d3.scale.linear()
 					.domain([0,1])
-					.range([0,maxBarLength]);
+					.range([3,maxBarLength]);
 					
 	scaleOpacity = d3.scale.linear()
 					.domain([0,1])
-					.range([0,1]);
+					.range([0.1,1]);
 	
 	var barsGroup1 = d3.select("#topic1barsColumn").select("svg")
 					.attr("x",0)
@@ -246,7 +313,7 @@ function overSentence(d,i){
 			rowsToLookAt = [];
 			maxSimValue = 0;
 			maxSimValueRow = -1;
-			if (q==2){
+			if (firstTopicFirst[q]){
 				//This is because the files were prepared in an odd manner
 				d3.range(nSentences[q]).forEach(function(elem){
 					rowsToLookAt.push(i*nSentences[q] + elem);
@@ -286,9 +353,15 @@ function overSentence(d,i){
 			//$(".sentence_t2_" + maxSimValueRow).highlight(wordsToHighlightList);//To show the same on the other side
 			
 			if (maxSimValueRow>=0){
-				wordsToHighlightString2 = pairComparisons[q][rowsToLookAt[maxSimValueRow]][sentenceLCSColumnIndex];
-				wordsToHighlightString2 = wordsToHighlightString2.slice(1,wordsToHighlightString2.length-1);//remove []
-				wordsToHighlightList2 = wordsToHighlightString2.split(",");//separate words
+				//Check if there is an extra column for words in common
+				if (sentenceLCSColumnIndex < pairComparisons[q][rowsToLookAt[maxSimValueRow]].length){
+					wordsToHighlightString2 = pairComparisons[q][rowsToLookAt[maxSimValueRow]][sentenceLCSColumnIndex];
+					wordsToHighlightString2 = wordsToHighlightString2.slice(1,wordsToHighlightString2.length-1);//remove []
+					wordsToHighlightList2 = wordsToHighlightString2.split(",");//separate words
+				}
+				else{
+					wordsToHighlightList2 = findWordsInCommon(pairComparisons[q][rowsToLookAt[maxSimValueRow]][sentenceTopic1ColumnIndex], pairComparisons[q][rowsToLookAt[maxSimValueRow]][sentenceTopic2ColumnIndex]);
+				}
 				
 				//$(".sentence_t" + q + "_" + maxSimValueRow).highlight($(".sentence_t" + q + "_" + maxSimValueRow).text().split(/\s+/),{className:"biggerFonts"});
 				$(".sentence_t" + q + "_" + maxSimValueRow).highlight($(".sentence_t" + q + "_" + maxSimValueRow).text(),{className:"biggerFonts"});
@@ -296,6 +369,7 @@ function overSentence(d,i){
 			}
 
 			modifySentenceMetric(sentenceLCS[i],0,i,maxSimValueRow);
+			updateParagraphMetrics(maxSimValue,q-1,i,maxSimValueRow);
 		}
 		
 	}
@@ -309,22 +383,38 @@ function outSentence(d,i){
 function modifySentenceMetric(maxSimValue,topic,i,maxSimValueRow){
 	
 	textToAdd = d3.select("#topic"+ (topic+1)+ "barsColumn").select("svg").selectAll(".sentLCSText").data([1])
+	.attr("dx",5)
 	.attr("x",function(d){
-			return scaleBars(maxSimValue)+10;
+			return scaleBars(maxSimValue);
 	})
 	.attr("y",$(".sentence_t0_"+i).position().top - $("table #topic1barsColumn svg").offset().top + barsHeight +($("table #topic1barsColumn").offset().top - $(".upperTable").offset().top))
-	.text(maxSimValue.toFixed(4));
+	.text(function(){
+		if (parseFloat(maxSimValue)<0.001){ 
+			return "0";
+		}
+		else{
+			return maxSimValue.toFixed(3);
+		}
+	});
 	
 	textToAdd.enter().append("text")
 	.attr("class","sentLCSText")
+	.attr("dx",5)
 	.attr("x",function(d){
-			return scaleBars(maxSimValue)+10;
+			return scaleBars(maxSimValue);
 	})
 	.attr("text-anchor",function(d){
 			return "start";
 	})
 	.attr("y",$(".sentence_t0_"+i).position().top - $("table #topic1barsColumn svg").offset().top + barsHeight +($("table #topic1barsColumn").offset().top - $(".upperTable").offset().top))
-	.text(maxSimValue.toFixed(4));
+	.text(function(){
+		if (parseFloat(maxSimValue)<0.001){ 
+			return "0";
+		}
+		else{
+			return maxSimValue.toFixed(3);
+		}
+	});
 	
 }
 
@@ -363,6 +453,14 @@ function adjustNumberOfTopics(numberOfTopics){
 	
 	topicsMetricsToAdd.exit().remove();
 	
+	var paragraphMetricsToAdd = d3.select(".tableSmallTopics").select("#paragraphSimilarityRow").selectAll("td").data(d3.range(numberOfTopics));
+	
+	paragraphMetricsToAdd.enter().append("td")
+	.style("padding-left","20px")
+	.attr("id", "paragraphMetric");
+	
+	paragraphMetricsToAdd.exit().remove();
+	
 	addTopicMetrics();
 	drawHistogramsBigTopic();
 }
@@ -382,7 +480,13 @@ var htmlClass = "sentence";
 			topic1List = topic1.split('.');
 		}
 		else{
-			topic1List = topic1.split('</p>');
+			//paragraph separator
+			var reParagSep = /<p>|<fig>|<tabl>|<ul>|<shortdesc>|<\/p>|<\/fig>|<\/table>|<\/ul>|<\/shortdesc>/;
+			
+			topic1List = topic1.split(reParagSep);
+			
+			//var reParagSepTags = /(<p>|<fig>|<tabl>|<ul>|<shortdesc>|<\/p>|<\/fig>|<\/table>|<\/ul>|<\/shortdesc>)/;
+			//topic1List = topic1.split(reParagSepTags);
 		}
 		
 		topic1List = removeEmptyElements(topic1List);
@@ -399,7 +503,7 @@ var htmlClass = "sentence";
 function wrapElementTagToList(list,element,className){
 
 	list.forEach(function(elem,index){
-		list[index] = "<"+element + " class='" + className + index + "'>" + elem + ".</"+element + ">";		
+		list[index] = "<"+element + " class='" + className + index + "'>" + elem + "</"+element + ">";		
 	});
 }
 
@@ -425,32 +529,52 @@ var re = /^\s*$/
 
 function readyWithLoading(){
 
-	var patternToFind = /topic=(\d+),neighbors=\((.*?)\)/;
+	var patternToFind = /book=(\w+),topic=(\d+),neighbors=\((.*?)\),similarity=(\w+)/;
 	
 	if (patternToFind.test(window.location.href)){
-		//e.g. http://localhost:8708/multiple.html?topic=92,neighbors=(10,23,34,56)
+		//e.g. http://localhost:8708/multiple.html?book=blabla,topic=92,neighbors=(10,23,34,56),similarity=qwe
 		
-		var topicIndex = parseInt(patternToFind.exec(window.location.href)[1]);
-		var listOfNeighbors = patternToFind.exec(window.location.href)[2].split(",");
+		var bookName = patternToFind.exec(window.location.href)[1];
+		var topicIndex = parseInt(patternToFind.exec(window.location.href)[2]);
+		var listOfNeighbors = patternToFind.exec(window.location.href)[3].split(",");
+		var similarity = patternToFind.exec(window.location.href)[4]
+		
+		var bookDir;
+		if (bookName == 'CORDAPContDev'){
+			bookDir = bookName+'/'
+		}
 		
 		var pathForData = './data/';
 		var indexFileName = 'idBookTopic';
 		
 		var randNumb = Math.floor(Math.random() * 1000);
-		d3.text(pathForData + indexFileName + "?" + randNumb, function(datasetText) {
+		d3.text(pathForData + bookDir +  indexFileName + "?" + randNumb, function(datasetText) {
 				idBookTopic = d3.csv.parseRows(datasetText);
+				
 				topicNames[0] = idBookTopic[topicIndex][2].ltrim();
-				topicFiles[0] = pathForData + topicNames[0];
+				topicIds[0] = parseInt(topicIndex);
+				topicFiles[0] = pathForData + bookDir + 'in'+ bookDir + topicNames[0];
 				var neighborTopicName;
 				listOfNeighbors.forEach(function(elem, index){
 					neighborTopicName = idBookTopic[parseInt(elem)][2].ltrim();
 					topicNames.push(neighborTopicName);
-					topicFiles.push(pathForData + neighborTopicName);
+					topicIds.push(parseInt(elem));
+					topicFiles.push(pathForData + bookDir + 'in'+ bookDir + neighborTopicName);
 				})
+				
+				var nTopics = listOfNeighbors.length;
+				var comparisonDirectory = pathForData + bookDir + 'out' + bookName + '_' + similarity + '/';
+				
+				readTopPairComparisons(comparisonDirectory,topicNames,topicIds,nTopics);
+				
+				
+				
 				/*
 				Compute pairwise comparison with topicIndex and listOfNeighbors as arguments
 				and get a sentenceComparison.tsv file and topicMetrics(which contains the overall similarity)
 				*/
+				
+				main();
 		})
 		
 	}

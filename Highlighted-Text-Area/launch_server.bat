@@ -1,1 +1,0 @@
-C:\Languages\Python27\python -m CGIHTTPServer 8588 &
