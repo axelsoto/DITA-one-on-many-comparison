@@ -40,24 +40,29 @@ function readTopPairComparisons(directory, topicNames, topicIds, nTopics){
 	var fileComparison;
 	for (var q=1;q<=nTopics;q++){
 		if (topicIds[q] > topicIds[0]){
-			fileComparison = directory + topicNames[q] + '; ' + topicNames[0]; 
+			fileComparison = topicNames[q] + '; ' + topicNames[0]; 
 			firstTopicFirst.push(false);
 		}
 		else{
-			fileComparison = directory + topicNames[0] + '; ' + topicNames[q];
+			fileComparison = topicNames[0] + '; ' + topicNames[q];
 			firstTopicFirst.push(true);
 		}
-		readTopPairComp(fileComparison,q)
+		readTopPairComp(directory,fileComparison,q)
 	}
 }
 
-function readTopPairComp(pairComparisonFilePrefix,indTopic){
-	d3.text(pairComparisonFilePrefix + "?" + Math.floor(Math.random() * 1000), function(datasetText) {
+function readTopPairComp(directory, pairComparisonFilePrefix,indTopic){
+	d3.text(directory + pairComparisonFilePrefix + "?" + Math.floor(Math.random() * 1000), function(error,datasetText) {
+		if (error){
+			firstTopicFirst[indTopic-1]=!firstTopicFirst[indTopic-1];
+			readTopPairComp(directory, pairComparisonFilePrefix.split("; ")[1] + "; " + pairComparisonFilePrefix.split("; ")[0],indTopic);
+		}
+		else{
 				pairComparisons[indTopic] = d3.tsv.parseRows(datasetText);
 				var aux=0;
 				
 				//This is due to a mistake in the files that come with one blank column for gtm
-				if (pairComparisons[1][0][LCSColumnIndex]==""){
+				if (pairComparisons[indTopic][0][LCSColumnIndex]==""){
 					LCSColumnIndex = LCSColumnIndex + 1
 					sentenceTopic1ColumnIndex = sentenceTopic1ColumnIndex + 1;
 					sentenceTopic2ColumnIndex = sentenceTopic2ColumnIndex + 1;
@@ -67,7 +72,8 @@ function readTopPairComp(pairComparisonFilePrefix,indTopic){
 					aux = d3.max([aux,parseFloat(elem[LCSColumnIndex])]);
 				})
 				topicMetrics.push(aux);
-		});
+		}
+	});
 }
 
 String.prototype.trim = function() {
@@ -89,9 +95,9 @@ var htmlClass = "sentence";
 	
 	d3.text(topicFiles[0], function(datasetText){
 		var topicBig = datasetText;
-		d3.text(topicFiles[1], function(datasetText){
+		d3.text(topicFiles[1], function(error,datasetText){
 			var topicSmall1 = datasetText;
-			d3.text(topicFiles[2], function(datasetText){
+			d3.text(topicFiles[2], function(error,datasetText){
 				var topicSmall2 = datasetText;
 				
 				if (granularitySentence){
