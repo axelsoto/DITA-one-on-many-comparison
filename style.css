@@ -17,3 +17,21 @@
 td{
 	vertical-align:top;
 }
+
+#firstRow td fieldset legend{
+	color:green;
+}
+
+#topic1text legend{
+	color:blue;
+}
+
+fieldset {   
+  -moz-border-radius:10px;  
+  border-radius: 10px;  
+  -webkit-border-radius: 10px; //edit :D
+}
+
+#methodMetrics {
+	font-weight: bold;
+}
