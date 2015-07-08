@@ -8,7 +8,7 @@ var lastHighlighted = -1;
 var nSentences = [];
 var currentNTopics = 2;
 
-var minWordsPerSentence = 3;
+var minWordsPerSentence = 4;
 
 var maxBarLength = 160;
 var barsHeight = 10;
@@ -86,7 +86,6 @@ function readTopPairComp(directory, pairComparisonFilePrefix,indTopic,trials,num
 			filesSuccessfullyLoaded++;
 			if (filesSuccessfullyLoaded==(numbTopics)){
 				main();
-				loadContextGraph();
 			}
 		}
 	});
@@ -164,7 +163,22 @@ wrapElementTagToList(topicSmallList[2], "code", "codeClass" + "_t2_");*/
 				drawHistogramsBigTopic();
 				
 				addTopicMetrics();
-				
+				//Awful patch to fix when this is called with one neighbor only
+				if (topicNames[2] == topicNames[1]){
+					topicNames.splice(2);
+					topicTypes.splice(2);
+					topicMetrics.splice(1);
+					topicIds.splice(2);
+					topicFiles.splice(2);
+					currentNTopics = 1;
+					d3.select("#nTopics")[0][0].value = 1;
+					d3.select("#nTopics").attr("max",nTopics);
+					loadContextGraph();
+					includeText(currentNTopics,topicFiles);
+				}
+				else{
+					loadContextGraph();
+				}
 				
 				
 			});
@@ -236,7 +250,7 @@ function drawHistogramsBigTopic(){
 			}
 			else{
 				//If looking into extracted words
-				sentenceBigTopic = pairComparisons[q][i+nSentencesTopic1 * 0][sentenceTopic1ColumnIndex].split(" ");
+				sentenceBigTopic = pairComparisons[q][i+nSentencesTopic1 * 0][sentenceTopic2ColumnIndex].split(" ");
 				//If looking into real words
 				/*
 				if (regulExp.test(topicBigList[i])){
@@ -245,7 +259,7 @@ function drawHistogramsBigTopic(){
 				
 				d3.range(nSentences[q]).forEach(function(elem){
 					//If looking into extracted words
-					sentenceSmallTopic = pairComparisons[q][i+nSentencesTopic1 * elem][sentenceTopic2ColumnIndex].split(" ");
+					sentenceSmallTopic = pairComparisons[q][i+nSentencesTopic1 * elem][sentenceTopic1ColumnIndex].split(" ");
 					//If looking into real words
 					/*
 					if (regulExp.test(topicSmallList[q][elem])){
@@ -301,7 +315,8 @@ function drawHistogramsBigTopic(){
 	})
 	.attr("x",0)
 	.attr("y",function(d,i){
-		return $(".sentence_t0_"+i).position().top - $("table #topic1barsColumn svg").offset().top + ($("table #topic1barsColumn").offset().top - $(".upperTable").offset().top);;
+		return $(".sentence_t0_"+i).position().top - $("table #topic1barsColumn svg").offset().top + ($("table #topic1barsColumn").offset().top - $(".upperTable").offset().top);
+		//return $(".sentence_t0_"+i).position().top - $("table #topic1barsColumn svg").offset().top + barsHeight +($("table #topic1barsColumn").offset().top - $(".upperTable").offset().top);
 	})
 	.attr("height", barsHeight)
 	.attr("width", function(d){
@@ -420,7 +435,7 @@ function overSentence(d,i){
 			}
 			else{
 				//If looking into extracted words
-				sentenceBigTopic = pairComparisons[q][i+nSentencesTopic1 * 0][sentenceTopic1ColumnIndex].split(" ");
+				sentenceBigTopic = pairComparisons[q][i+nSentencesTopic1 * 0][sentenceTopic2ColumnIndex].split(" ");
 				//If looking into real words
 				/*
 				if (regulExp.test(topicBigList[i])){
@@ -429,7 +444,7 @@ function overSentence(d,i){
 				
 				d3.range(nSentences[q]).forEach(function(elem){
 					//If looking into extracted words
-					sentenceSmallTopic = pairComparisons[q][i+nSentencesTopic1 * elem][sentenceTopic2ColumnIndex].split(" ");
+					sentenceSmallTopic = pairComparisons[q][i+nSentencesTopic1 * elem][sentenceTopic1ColumnIndex].split(" ");
 					//If looking into real words
 					/*
 					if (regulExp.test(topicSmallList[q][elem])){
@@ -527,7 +542,7 @@ function modifySentenceMetric(maxSimValue,topic,i,maxSimValueRow){
 
 function nTopicsListener(selection){
 	selection.on("change",function(){
-		currentNTopics = this.value;
+		currentNTopics = parseInt(this.value);
 		includeText(currentNTopics, topicFiles);
 	});
 }
@@ -755,7 +770,7 @@ function graph(){
 	
 	this.updateGraph = function(){
 		svg.selectAll(".context_node")
-			.data(d3.range(topicNames.length))
+			//.data(nodes)
 			.style("fill", function(d,i) { 
 				//return color(dictionaryTopic[topic_type[i][0]]);
 				//return color(dictionaryBook[idBookTopic_name[i][1]]);
@@ -780,7 +795,7 @@ function graph(){
 	}
 	
 	this.prepareWeights = function(distances){
-
+		//weights = [];
 		distances.forEach(function(elem,idx){
 			var contentLink = new Object();
 			contentLink.source = 0;
@@ -818,8 +833,11 @@ function readyWithLoading(){
 		var similarity = patternToFind.exec(window.location.href)[4]
 		
 		var bookDir;
-		if (bookName == 'CORDAPContentDeveloper'){
+		if ((bookName == 'CORDAPContentDeveloper') || (bookName == 'CORDAPProductOwner') || (bookName == 'CORDAPReviewer') || (bookName == 'CORDAPSystemAdmin')){
 			bookDir = bookName+'/'
+		}
+		else{
+			alert("Wrong book input")
 		}
 		
 		var pathForData = './data/';
@@ -835,6 +853,9 @@ function readyWithLoading(){
 				topicTypes[0] = idBookTopic[topicIndex][3].trim();
 				topicIds[0] = parseInt(topicIndex);
 				topicFiles[0] = pathForData + bookDir + 'in'+ bookDir + topicNames[0];
+				if (listOfNeighbors.length == 1){//Awful patch to fix when this is called with one neighbor only
+					listOfNeighbors.push(listOfNeighbors[0]);
+				}
 				var neighborTopicName;
 				listOfNeighbors.forEach(function(elem, index){
 					neighborTopicName = idBookTopic[parseInt(elem)][2].ltrim();
@@ -848,8 +869,14 @@ function readyWithLoading(){
 								dictionaryTopic["nTypes"] = dictionaryTopic["nTypes"]+1;
 							}
 				})
-				if (window.opener.dictionaryTopic != undefined){
-					dictionaryTopic = window.opener.dictionaryTopic;
+
+				if (window.opener != null){
+					try{
+						dictionaryTopic = window.opener.dictionaryTopic;
+					}
+					catch(e){
+						dictionaryTopic = {};
+					}
 				}
 				
 				var nTopics = listOfNeighbors.length;
