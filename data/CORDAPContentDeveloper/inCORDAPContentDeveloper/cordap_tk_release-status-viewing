@@ -1,0 +1,54 @@
+<p>Viewing general status of a release</p><p>Quickly view the development status of a release, iteration, or
+	 work package. 
+  </p> 
+	  
+		<p> Using the CORDAP Dashboard, you
+		  can view the status of your release, its iterations, and work packages. 
+		</p> 
+		<p>
+		  
+			 <p>During this task, if you need to go back up a level, use the
+				breadcrumb trail within the 
+				Status area. 
+			 
+		  </p>
+		</p> 
+		 
+		   Select your product from the drop-down at the top of the
+			 Dashboard tab. 
+		   
+		   
+			 <p>The Dashboard is refreshed and
+				shows status information for the selected product. 
+			 </p> 
+		   
+		 
+		  Place your cursor over the status bar to see the percentage of the
+			 work completed.
+		   
+		   
+			 <p>This step can be repeated when
+				you view the status for iterations and work packages. 
+			 </p> 
+		   
+		 
+		  Click a release to show the status of the iterations within the
+			 release. 
+		   
+		 
+		 
+		  Click an iteration to show the status of the work packages within
+			 the iteration. 
+		   
+		  
+			 <p>
+				
+				  <p>Clicking the name of the work package opens the work package
+					 for editing.
+				  </p>
+				
+			 </p>	 
+		<p> The statuses are displayed. 
+		</p> 
+	  
+  

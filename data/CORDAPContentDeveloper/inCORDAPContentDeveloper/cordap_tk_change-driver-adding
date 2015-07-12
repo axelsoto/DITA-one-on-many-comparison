@@ -1,0 +1,103 @@
+<p>Adding a change driver</p><p>Change drivers can be used to track bug fixes, feature
+	 modifications, or other non-feature based changes. 
+  </p> 
+	  
+		<p>Add change drivers and their information to CORDAP, so that you can
+		  link them to work packages. By adding the information and linking to work
+		  packages, the information is readily available to the content developers when
+		  they begin work. 
+		</p> 
+	  
+	  
+		 
+		   In 
+			 My Products, expand the desired product. 
+		   
+		 
+		 
+		  Click the desired release. 
+		   
+		 
+		 
+		  Click 
+			 Change Drivers. 
+		   
+		  The list of change drivers included in the selected release
+			 appears. 
+		   
+		 
+		 
+		  Click 
+			 Create a new change driver. 
+		   
+		 
+		 
+		  Enter the details for the change driver. 
+		   
+		   
+			 <p> 
+			 <table> 
+				 
+					  
+						 
+						  Fields 
+						   
+						 
+						 
+						  Description 
+						   
+						 
+					  
+				   
+					  
+						 
+						  Name 
+						   
+						 
+						 
+						  Enter a name to identify the change driver. 
+						   
+						 
+					  
+					  
+						 
+						  Description 
+						   
+						 
+						 
+						  Enter a description for the change driver. 
+						   
+						 
+					  
+					  
+						 
+						  Type 
+						   
+						 
+						 
+						  Identify if it is a change request or a feature
+							 modification. 
+						   
+						 
+					  
+					  
+						 
+						  Feature 
+						   
+						 
+						 
+						  Selecting a feature links the change driver to that
+							 feature. 
+						   
+						 
+					  
+				   
+				 
+			  
+			 </table> 
+		  </p> 
+		  Click 
+			 Save. 
+		   
+		 
+	 

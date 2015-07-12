@@ -1,0 +1,136 @@
+<p>Release tabs</p><p>The details for each release are found on the various CORDAP tabs.
+	 
+  </p> 
+	 <p> 
+		<p> CORDAP displays the
+		  release-specific details on various tabs. Access these tabs from 
+		  My Products, by expanding a product and selecting
+		  a release. 
+		 
+		</p><p> 
+		  <fig> 
+			 Release tabs 
+		   
+		</fig> 
+	 </p></p><p> 
+		<p>General tab</p> 
+		<p>On the General tab,
+		  you can find the following sub-sections: Basic, Connections, Properties, and
+		  Resources. 
+		</p> 
+		<p>On the General tab, you can find the following
+		  sub-sections: Basic, Connections, Properties, and Resources. 
+		</p>
+		<p>On the General
+		  tab, you can find the following sub-sections: Basic and Connections. 
+		</p>
+		<p>On the General tab, you can find the following
+		  sub-sections: Basic and Connections. 
+		</p> 
+		<p> 
+		<ul> 
+		   
+			 Basics: set the product and
+				release names and descriptions 
+			  
+		   
+		   
+			 Connections: create and save CMS
+				connections 
+			  
+		   
+		   
+			 Properties: define the
+				properties used to categorize product content 
+			  
+		   
+		   
+			 Resources: add users to the
+				release 
+			  
+		   
+		   
+			 Properties: define the properties used to categorize product
+				content 
+			  
+		   
+		   
+			 Resources: add users to the release 
+			  
+		   
+		 
+		</ul> 
+	 </p></p><p> 
+		<p>Features tab</p> 
+		<p>You add all features for a release
+		  on the Features tab. After you create a work package, you can link it to one of
+		  the listed features. 
+		</p> 
+	  
+	 </p><p> 
+		<p>Assets tab</p> 
+		<p> 
+		   
+			 <p>You must have a CMS connection
+				to use this tab. 
+			 </p> 
+		   
+		</p><p>You add all content impacted for
+		  this release to the Assets tab. When a work package is created, the content
+		  listed on the 
+		  Assets tab is available to add to the work
+		  package. If you add content to the work package, it appears as source content
+		  in the work package. 
+		 
+		</p><p>Clicking an asset can show you
+		  linked features, as well as the content of the asset in a read-only plain text
+		  view. 
+		</p>  
+	 </p><p> 
+		<p>Work Packages tab</p> 
+		<p>All work package information is
+		  stored on the Work Packages tab, but your view of this tab depends on your
+		  role. Based on your role, you can see one of the following: 
+		<ul> 
+		   
+			 Work packages assigned to you
+				and all unassigned work packages 
+			  
+		   
+		   
+			 All work packages for the
+				release 
+			  
+		   
+		 
+		</ul> 
+	 </p></p><p> 
+		<p>Iterations tab</p> 
+		<p>The project leads can use the
+		  Iterations tab to organize work packages into time frames called 
+		  iterations. A brief summary of the progress made for the
+		  iteration appears on the tab. 
+		 
+		</p><p>Based on your role, you can see one
+		  of the following: 
+		<ul> 
+		   
+			 Your progress for each iteration
+				based on the work packages assigned to you 
+			  
+		   
+		   
+			 The progress for each iteration
+				based on all created work packages 
+			  
+		   
+		 
+		</ul> 
+	 </p></p><p> 
+		<p>Change Drivers tab</p> 
+		<p>Change drivers generated for the
+		  release can be added to the Change Drivers tab. When a work package is created,
+		  you can link it to a change driver. 
+		</p> 
+	  
+  </p>

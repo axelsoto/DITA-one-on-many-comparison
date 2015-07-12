@@ -1,0 +1,98 @@
+<p>Reviewing feature information</p><p>See the information added about the feature and how the feature
+	 impacts work packages and change drivers. 
+  </p> 
+	  
+		<ul> 
+		   
+			 Impacted items must be linked to
+				the feature in order to appear in this view. 
+			  
+		   
+		   
+			 To edit the information, you
+				must have the right permissions. 
+			  
+		   
+		 
+	 </ul> 
+	  
+		<p> A feature can result in several
+		  different work packages, raise change drivers, and impact numerous
+		  deliverables. CORDAP provides you with a summary view for each feature. This
+		  view includes the feature details, and shows all work packages and change
+		  drivers linked to the feature. 
+		</p> 
+	  
+	  
+		 
+		   In 
+			 My Products, expand the desired product. 
+		   
+		 
+		 
+		  Click the desired release. 
+		   
+		 
+		 
+		  Click 
+			 Features. 
+		   
+		  The list of features included in the selected release
+			 appears. 
+		   
+		 
+		 
+		  (Optional) Click 
+			 Display all features to show all features for
+			 the product regardless of release. 
+		   
+		 
+		 
+		   Click the name for the desired feature. 
+		   
+		 
+		 
+		  Review the feature details. 
+		   
+		   
+			 <p>Depending on your permissions,
+				you can click on the feature name to edit the details. 
+			 </p> 
+		   
+		 
+		  Review the work packages linked to this feature. 
+		   
+		   
+			 <p>Within this area you can sort
+				the list of work packages, view the details for the work packages, update the
+				work packages, and view unassigned work packages. Depending on your
+				permissions, you might also be able to create new work packages that will be
+				automatically linked to this feature. 
+			 </p> 
+		   
+		 
+		  Review the change drivers linked to this feature. 
+		   
+		   
+			 <p>Depending on your permissions,
+				you can click on the change request name to edit the details. 
+			 </p> 
+		   
+		 
+		  View the details for another feature by clicking on the current
+			 feature's name in the bread crumb above the feature details and then clicking
+			 the desired feature's name. 
+		   
+		 
+		 
+		  Return to the complete feature list by clicking 
+			 Features in the bread crumb above the feature
+			 details. 
+		   
+		 
+	  
+		<p> Feature information is shown for
+		  your review. 
+		</p> 
+	  
+  

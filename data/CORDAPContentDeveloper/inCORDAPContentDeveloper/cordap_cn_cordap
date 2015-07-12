@@ -1,0 +1,24 @@
+<p>CORDAP</p><p>Work assignments in one place for all to view and track—managers,
+	 assignees, reviewers, and anyone else on the project.
+  </p> 
+	 <p> 
+		<p> Innovatia has developed a content
+		  reuse, development, and planning application known as CORDAP. 
+		</p> 
+		<p>CORDAP uses the terms 
+		  product and 
+		  release to identify the hierarchal relationship and construction
+		  of the content. A product is a project or a portfolio that can contain one or
+		  more content releases. Each release comprises features or change drivers that
+		  impact the content in the final deliverables. The topics impacted by the
+		  features and change drivers are grouped into work packages and assigned to
+		  authors for the content development. After all work packages progress through
+		  the work flow, the deliverables are complete for that release. 
+		 
+		</p><p> 
+		  <fig> 
+			 Release > feature > work package > deliverable
+				mapping 
+		   
+		</fig> 
+	 </p></p>

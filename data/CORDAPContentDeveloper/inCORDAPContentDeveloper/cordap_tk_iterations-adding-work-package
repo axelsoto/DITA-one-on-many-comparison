@@ -1,0 +1,55 @@
+<p>Adding work packages to an iteration</p><p>Iterations can group work packages with the same due dates. 
+  </p> 
+	  
+		<ul> 
+		   
+			  At least one iteration must
+				exist. 
+			  
+		   
+		 
+	 </ul> 
+	  
+		<p> Group all work packages due for the
+		  same milestone into one iteration. 
+		</p> 
+	  
+	  
+		 
+		   In 
+			 My Products, expand the desired product. 
+		   
+		 
+		 
+		  Click the desired release. 
+		   
+		 
+		 
+		  Click 
+			 Iterations. 
+		   
+		 
+		 
+		  Select the box around the iteration to which the work package
+			 belongs.
+		   
+		  
+			 <p>Work packages that are not yet added to an iteration are shown in 
+				Unscheduled.
+			 
+		  </p>
+		   
+			 <p>All work packages in the
+				selected iteration appear. 
+			 </p> 
+		   
+		 
+		  Drag and drop the work package into the desired iteration. 
+		   
+		 
+	  
+		<p> The work package is now part of the
+		  selected iteration. 
+		</p> 
+	  
+  

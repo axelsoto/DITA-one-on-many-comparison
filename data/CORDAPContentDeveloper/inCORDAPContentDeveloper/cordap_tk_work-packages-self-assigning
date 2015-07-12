@@ -1,0 +1,84 @@
+<p>Self-assigning work packages</p><p>During down time, self-assign a work package that is not yet
+	 assigned. 
+  </p> 
+	  
+		<p> 
+		<ul> 
+		  
+			  Your role in the project must match the role
+				required for the unassigned work packages. For instance, if a work package is
+				waiting for an editor, but you are an author, the work package does not appear.
+				
+			  
+			  Your role in
+				the project must match the role required for the unassigned work packages. For
+				instance, if a work package is waiting for an editor, but you are an author,
+				the work package does not appear. 
+			  
+			  Your role
+				in the project must match the role required for the unassigned work packages.
+				For instance, if a work package is waiting for an editor, but you are an
+				author, the work package does not appear. 
+			  
+			  Your role in
+				the project must match the role required for the unassigned work packages. For
+				example, if you are a reviewer, then you can only see work packages waiting for
+				review. 
+			  
+		   
+		 
+		</ul> 
+	 </p> 
+		<p> There are times
+		  when there might be a backlog of work packages waiting for an assignee. For
+		  example, a lead writer can create multiple work packages, but not assign them.
+		  If the first step in the work flow is authoring and you have the role of
+		  author, then you can access the list of unassigned work packages and assign a
+		  work package to yourself. 
+		</p>
+		<p> There are times when there might be a backlog of
+		  work packages waiting for an assignee. For example, a lead writer can create
+		  multiple work packages, but not assign them. If the first step in the work flow
+		  is authoring and you have the role of author, then you can access the list of
+		  unassigned work packages and assign a work package to yourself. 
+		</p> 
+		<p> There are
+		  times when there might be a backlog of work packages waiting for an assignee.
+		  For example, a lead writer can create multiple work packages, but not assign
+		  them. If the first step in the work flow is authoring and you have the role of
+		  author, then you can access the list of unassigned work packages and assign a
+		  work package to yourself. 
+		</p> 
+		<p>There are times
+		  when there might be a backlog of work packages waiting for an assignee. For
+		  example, an author might complete multiple work packages, but instead of
+		  assigning them to a specific reviewer, they are left as unassigned in the
+		  review state. If the next step in the work flow is Review and you have the role
+		  of reviewer, then you can access the list of unassigned work packages and
+		  assign a work package to yourself. 
+		</p> 
+	  
+	  
+		 
+		   Access 
+			 My Work. 
+		   
+		 
+		 
+		  Click 
+			 Display unassigned work packages. 
+		   
+		 
+		 
+		  Click 
+			 Assign to me beside the work package on which
+			 you want to work. 
+		   
+		 
+	  
+	  
+		<p> The work package is assigned to you
+		  and CORDAP sends you an assignment notification email. 
+		</p> 
+	  
+  

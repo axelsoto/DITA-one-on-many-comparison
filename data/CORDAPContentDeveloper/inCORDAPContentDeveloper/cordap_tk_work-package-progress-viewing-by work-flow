@@ -1,0 +1,46 @@
+<p>Viewing work package progress</p><p>Quickly see where the work packages are in the work flow. 
+  </p> 
+	  
+		<p> Within the 
+		  Dashboard, the 
+		  Work Package Time Line provides you with a visual
+		  display of all the active work packages in a work flow. The work packages are
+		  displayed as balls and are grouped into the stages of the selected work flow.
+		  Using the filters, you can change the view based on release, iteration, work
+		  flow, or resource. 
+		 
+	 </p> 
+	  
+		 
+		   Select your product from the drop-down at the top of the
+			 Dashboard tab. 
+		   
+		   
+			 <p>The Dashboard is refreshed and
+				shows status information for the selected product. 
+			 </p> 
+		   
+		
+		  
+		   
+		  
+		 
+		 
+		   Select your desired release, iteration, work flow, or resource in
+			 the 
+			 Work Package Time Line area. 
+		   
+		   
+			 <p>The active work packages matching your selections are displayed. 
+			 </p> 
+		   
+		 
+		  Hover over a work package to see its details. 
+		   
+		 
+	   
+		<p> Active work packages are displayed
+		  in the various work flow states. 
+		</p> 
+	  
+  

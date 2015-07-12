@@ -8,3 +8,12 @@ author = {Soto, Axel J. and Mohammad, Abidalrahman and Albert, Andrew and Islam,
   year={2015},
   organization={ACM},
 }
+
+-----------------------------------------------------------------
+A single book has been loaded (CORDAPContentDeveloper) with LCS distance precomputed.
+Use:
+http://[host]:[port]/multiple.html?book=[bookName],topic=[focusTopic],neighbors=([comma separated topicIndices]),similarity=[similarityMethod]
+
+E.g:
+
+http://localhost:8888/multiple.html?book=CORDAPContentDeveloper,topic=13,neighbors=(14,17,21,27),similarity=lcs

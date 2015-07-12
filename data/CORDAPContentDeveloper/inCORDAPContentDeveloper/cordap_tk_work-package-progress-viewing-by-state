@@ -1,0 +1,47 @@
+<p>Viewing work packages by work flow state</p><p>Quickly view all work packages within a work flow state. 
+  </p> 
+	  
+		<p> Within the 
+		  Dashboard, the 
+		  Workflow Time Line provides you with a visual
+		  display of work packages in a specific work flow state. The work packages are
+		  displayed as balls and are shown by date due and percentage complete. Using the
+		  filters, you can change the view based on release, iteration, work flow,
+		  resource, due date, or status. 
+		 
+	 </p> 
+	  
+		 
+		   Select your product from the drop-down at the top of the
+			 Dashboard tab. 
+		   
+		   
+			 <p>The Dashboard is refreshed and
+				shows status information for the selected product. 
+			 </p> 
+		   
+		 
+		   
+		   
+		 
+		 
+		   Scroll down to the 
+			 Workflow Time Line. 
+		   
+		 
+		 
+		  Display the work flow state you want to see by using the filters,
+			 display options, or navigation arrows. 
+		   
+		   
+			 <p>The graph is refreshed and
+				shows the work packages associated with the selected work flow state. The work
+				packages are mapped on the graph based on due date and percentage complete. 
+			 </p> 
+		   
+		  
+		<p> The work flow state is displayed
+		  with the associated work packages. 
+		</p> 
+	  
+  

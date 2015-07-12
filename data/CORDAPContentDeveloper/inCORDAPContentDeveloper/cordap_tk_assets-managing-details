@@ -1,0 +1,85 @@
+<p>Reviewing asset information</p><p>Review or edit the details set for an asset, and view the
+	 plain-text version of its content. 
+  </p> 
+	  
+		<p> 
+		<ul> 
+		   
+			 To edit asset properties, you
+				must have the right permissions. 
+			  
+		   
+		 
+		</ul> 
+	 </p> 
+		<p>Assets are the pieces of content
+		  added to CORDAP for the release. Your team might be using properties to
+		  identify key information about each asset, such as name, type, or SME. View
+		  this information, as well as a plain-text view of the content using the Assets
+		  tab. 
+		</p> 
+		<p>If you identify an asset as being a
+		  specified deliverable type, then it is included on the Deliverables dashboard
+		  when linked to a work package. 
+		</p> 
+		 
+		   
+			 <p>Properties created in CORDAP and
+				applied to content units are not carried over into the CMS. When you set a
+				property for a topic or bookmap, there is no change to the actual file in the
+				CMS. The property is set in CORDAP only. 
+			 </p> 
+		   
+		 
+		 
+		  In 
+			 My Products, expand the desired product. 
+		   
+		 
+		 
+		  Click the desired release. 
+		   
+		 
+		 
+		  Click 
+			 Assets. 
+		   
+		  The list of all assets added to CORDAP appears. 
+		   
+		 
+		 
+		  Click the asset name. 
+		   
+		  The Edit CMS object properties windows opens. 
+		   
+		 
+		 
+		  In the Properties tab, view or edit the properties. 
+		   
+		 
+		 
+		  Click the Content tab. 
+		   
+		  The contents of the asset are display in plain text. This
+			 is read-only. 
+		   
+		 
+		 
+		  Click 
+			 Save. 
+		   
+		 
+	  
+	  
+		<p> Any change made to the asset
+		  properties are applied to the asset in CORDAP. 
+		</p> 
+	  
+	  
+		<p>Example</p> 
+		<p> 
+		  <fig> 
+			 Asset Properties tab 
+		   
+		</fig> 
+	 </p>

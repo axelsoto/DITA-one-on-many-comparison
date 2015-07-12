@@ -1,0 +1,57 @@
+<p>Viewing deliverable status</p><p>Review the progress being made on the deliverables for your
+	 release. 
+  </p> 
+	  
+		<ul> 
+		   
+			  To appear on the Deliverables
+				Dashboard, an asset must be identified as an asset and be linked to a work
+				package. 
+			  
+		   
+		 
+	 </ul> 
+	  
+		<p> Using the Deliverables Dashboard,
+		  you can easily identify the status and progress being made on the deliverables
+		  impacted for the releases of your product. 
+		</p> 
+	  
+	  
+		 
+		   Select your product from the drop-down at the top of the
+			 Dashboard tab. 
+		   
+		   The Dashboard is refreshed and shows status information
+			 for the selected product. 
+		   
+		 
+		
+		  In the Deliverables area, place your cursor over the status bar to
+			 see the rate of completion for the deliverables impacted for the release.
+		  
+		
+		
+		  Click a release name to see the list of impacted deliverables and
+			 their rate of completion.
+		  
+		
+		
+		  Click a deliverable's name to see the iterations in which the work
+			 is scheduled for the deliverable.
+		  
+		
+		
+		  Click an iteration's name to see the work packages within the
+			 iteration.
+		  
+		  The Iterations tab is displayed for the selected iteration.
+		  
+		
+	  
+	  
+		<p> Progress details for the
+		  deliverables are displayed. 
+		</p> 
+	  
+  

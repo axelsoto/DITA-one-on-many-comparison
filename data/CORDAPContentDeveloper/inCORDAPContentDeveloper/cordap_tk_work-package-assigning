@@ -1,0 +1,87 @@
+<p>Starting a work package</p><p>Make the work packages available to the resources on the release. 
+  </p> 
+	  
+		<ul> 
+		   
+			 The work package must be
+				created. 
+			  
+		   
+		   
+			 Assignee must already exist as a
+				resource for the release. 
+			  
+		   
+		 
+	 </ul> 
+	  
+		<p>When you start a work package, you
+		  can assign it to a specific resource, or opt to leave the resource field empty.
+		  When you assign a work package to a resource, an auto-generated email
+		  notification is sent to the assignee with the details you added for the work
+		  package. If you leave the resource field empty, the work package appears as an
+		  unassigned work package that a resource can self-assign from the My Work tab.
+		</p> 
+	  
+	  
+		 
+		   In 
+			 My Products, expand the desired product. 
+		   
+		 
+		 
+		  Click the desired release. 
+		   
+		 
+		 
+		  Click 
+			 Work Packages. 
+		   
+		 
+		 
+		   Click 
+			 Start work beside the desired work package. 
+		   
+		 
+		 
+		  Edit the work package name to ensure it clearly communicates the
+			 intent of the work package. 
+		   
+		 
+		 
+		   Select a work flow. 
+		   
+		 
+		 
+		   Select a user. 
+		   
+		   
+			  
+				<p>If you leave this field
+				  empty, it appears as an unassigned work package that a user can self-assign
+				  from the My Work tab. 
+				</p> 
+			  
+		  	 
+		  Enter the number of planned work hours and a due date. 
+		   
+		  
+			 <p>This information is used to auto-calculate planned hours and due
+				dates for each state in the selected work flow.
+			 </p>
+		  
+		 
+		  Review and if desired, edit the notes, properties, or links. 
+		   
+		 
+		 
+		  Click 
+			 Save. 
+		   
+		 
+	   
+		<p> The work package is started and
+		  available for the resources. 
+		</p> 
+	  
+  

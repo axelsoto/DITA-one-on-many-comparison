@@ -1,0 +1,63 @@
+<p>Generating review output</p><p>Generate review output on-demand. 
+  </p> 
+	  
+		<ul> 
+		   
+			  Content from a CMS must be
+				linked to the work package. 
+			 
+				
+			  
+		   
+		   
+			 Ensure the impacted topics are
+				checked back into the CMS, so that the most recent version of the content is
+				used for the output. 
+			  
+		   
+		</ul> 
+		<p>When a work package transitions into
+		  a review state, CORDAP generates generic HTML output for viewing and also
+		  allows the capture of comments directly in the output. If you make changes to
+		  the content and want to have the output regenerated without transitioning to
+		  the next state, you can do so manually. 
+		</p> 
+		 
+	  
+	  
+		 
+		  Find the desired work package in 
+			 My Work or on the 
+			 Work Packages tab. 
+		   
+		 
+		 
+		  Expand the work package to show 
+			 Outputs. 
+		   
+		 
+		 
+		  Expand 
+			 Outputs. 
+		   
+		 
+		 
+		  Click 
+			 Generate review output. 
+		   
+		  CORDAP generates the output, this process can take several
+			 minutes. 
+		   
+		 
+		 
+		  Click 
+			 Refresh. 
+		   
+		 
+	  
+	  
+		<p> Review output is generated and
+		  shown in the list of outputs. 
+		</p> 
+	  
+  

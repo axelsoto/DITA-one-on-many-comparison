@@ -1,0 +1,272 @@
+<p>Rates</p><p>Understand how rates are calculated. 
+  </p> 
+	 <p> 
+		<p>Description</p> 
+		<p>Rates are displayed for various
+		  items throughout CORDAP on the Dashboard and on Resource Usage. See the
+		  following tables for descriptions on the various rates. 
+		</p> 
+		<p> 
+		<table> 
+		Dashboard rates 
+		 
+			  
+				 
+				  Rate 
+				   
+				 
+				 
+				  Description 
+				   
+				 
+				 
+				  Example 
+				   
+				 
+			  
+		   
+			  
+				 
+				  Release status 
+				   
+				 
+				 
+				  Indicates the overall
+					 progress for all work packages in all iterations for the release. 
+				   
+				  For instance: 
+				   
+					  
+						WP 1: 70 of 100 hours
+						  complete 
+						 
+					  
+					  
+						WP 2: 50 of 100 hours
+						  complete 
+						 
+					  
+				  
+						
+					  
+					 
+						
+					  
+					  
+						WP 3: 0 of 50 hours
+						  complete 
+						 
+					  
+				   
+				   
+				  48% 
+				   
+				 
+			  
+				 
+				  Iteration status 
+				   
+				 
+				 
+				  Indicates the overall
+					 progress for all work packages in the iteration. 
+				   
+				  For instance: 
+				   
+					  
+						WP 1: 70 of 100 hours
+						  complete 
+						 
+					  
+					  
+						WP 2: 50 of 100 hours
+						  complete 
+						 
+					  
+				   
+				   
+				 
+				 
+				  60% 
+				   
+				 
+			  
+			  
+				 
+				  Work package 
+				   
+				 
+				 
+				  Indicates the progress based
+					 on the number of hours completed and the number of hours remaining for the work
+					 package. 
+				   
+				 
+				 
+				  70% 
+				   
+				 
+			  
+			  
+				 
+				  Deliverable 
+				   
+				 
+				 
+				  Indicates the overall
+					 progress made on work packages associated with the deliverable. 
+				   
+				  For instance: 
+				   
+					  
+						WP 1: 70 of 100 hours complete 
+						 
+					  
+					  
+						WP 3: 0 of 50 hours complete 
+						 
+					  
+				   
+				   
+				 
+				 
+				  47% 
+				   
+				 
+			  
+		  </table></p><p> 
+		<table> 
+		Resource Usage rates 
+		 
+			  
+				 
+				  Rate 
+				   
+				 
+				 
+				  Description 
+				   
+				 
+				 
+				  Example 
+				   
+				 
+			  
+		   
+			  
+				 
+				  Resource 
+				   
+				 
+				 
+				  This shows how much of the
+					 work from every release is assigned to the resource. 
+				   
+				  Calculated using the Release
+					 Hours information from every release on which the resource is used. 
+				   
+				  For instance: 
+				   
+					  
+						Release 1: 100 of 500
+						  hours (20%) 
+						 
+					  
+					  
+						Release 2: 300 of 500
+						  hours (60%) 
+						 
+					  
+				   
+				   
+				 
+				 
+				  40% 
+				   
+				 
+			  
+			  
+				 
+				  Release Hours 
+				   
+				 
+				 
+				  This shows how much of the
+					 release work is assigned to the resource. 
+				   
+				  Calculated using the number
+					 of assigned hours for a resource compared to the number of planned hours for
+					 all work packages in the release. 
+				   
+				 
+				 
+				  100 of 500 (20%) 
+				   
+				 
+			  
+			  
+				 
+				  Progress 
+				   
+				 
+				 
+				  This shows the total
+					 progress of a resource on their work package assignments. 
+				   
+				  Calculated using the number
+					 of actual hours compared to the sum of actual and remaining hours for all
+					 assigned work. 
+				   
+				 
+				 
+				  75 of 100 (75%) 
+				   
+				 
+			  
+			  
+				 
+				  Work Remaining 
+				   
+				 
+				 
+				  Number of assigned work
+					 hours left to complete. 
+				   
+				  Calculated using the number
+					 of remaining hours on assigned work packages. 
+				   
+				 
+				 
+				  25 
+				   
+				 
+			  
+			  
+				 
+				  Allocation 
+				   
+				 
+				 
+				  Indicates how much of a
+					 resource's time must be used to meet the assignment due dates for the
+					 identified product and release. 
+				   
+				  Calculated using the number
+					 of remaining hours on a work package, the number of working hours until it is
+					 due, and doing this for every assignment. 
+				   
+				  Indicates how much of a
+					 resource's time must be used to meet their assignment due dates for all
+					 assignments regardless of product or release. 
+				   
+				 
+				 
+				  125% 
+				   
+				 
+			  
+		   
+		 
+		 
+		</table> 
+	 </p></p>

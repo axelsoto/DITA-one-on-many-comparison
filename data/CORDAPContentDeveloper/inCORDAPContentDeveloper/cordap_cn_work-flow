@@ -1,0 +1,187 @@
+<p>Work flows</p><p>Every work package follows a work flow. 
+  </p> 
+	 <p> 
+		<p>Introduction</p> 
+		<p>At the beginning of
+		  a project, you must establish a work flow for the work assignments. You must
+		  consider the entire authoring process from start to release, including users
+		  involved, and whether or not you are linking Content Management System (CMS)
+		  content with CORDAP. Take time to plan what your project needs and discuss with
+		  the CORDAP System Administrator to make it happen. 
+		</p> 
+		<p>After a work flow
+		  is established, it must be communicated with the CORDAP System Administrator,
+		  so that it can be implemented into CORDAP. This can take several days of
+		  tweaking, so it is important to plan this out well in advance of the project
+		  start. 
+		</p> 
+		<p> At the
+		  beginning of a project, a work flow is developed for the work assignments. In
+		  CORDAP, each stage of the work flow is called a step. It is important that you
+		  know and understand the work flow set out for your project, as well as your
+		  role throughout that work flow. 
+		</p> 
+		<p> At the beginning
+		  of a project, a work flow is developed for the work assignments. In CORDAP,
+		  each stage of the work flow is called a step. It is important that you know and
+		  understand the work flow set out for your project, as well as your role
+		  throughout that work flow. 
+		</p> 
+		<p>At the beginning of a project, a work flow is
+		  established for all work assignments. The work flow must take into
+		  consideration the entire authoring process from start to release, including
+		  users involved, and whether or not CORDAP connects with the Content Management
+		  System (CMS). The work flow is established by the key members on the project
+		  along with the CORDAP System Administrator. The key people might include the
+		  project manager, information architect, and lead writer.
+		</p>
+		<p>After the work flows are established, it is the CORDAP
+		  System Administrator who creates and applies the work flows to the product.
+		</p>
+	  
+	 </p><p> 
+		<p>Types of work flows</p> 
+		<p>It is important to understand the
+		  difference between a standard work flow and a child work flow. A standard work
+		  flow progresses from one state to the next with only one assignee per state,
+		  for example: 
+		  AuthoringEditingRevisionsComplete.
+		  
+		 
+		</p><p>A child work flow splits a parent
+		  work flow into multiple concurrent states. For example, creating a child work
+		  flow for Peer review allows the parent work flow to split, involving multiple
+		  reviewers reviewing the content at the same time. The state of the parent work
+		  flow does not transition to the next state until all required Peer reviewers
+		  complete the review. For example: 
+		  AuthoringEditingRevisionsPeer
+				review x 3Revisions from
+				PeersComplete. 
+		 
+	 </p> 
+	 </p><p> 
+		<p>Multiple work flows</p> 
+		<p>CORDAP does allow for multiple work
+		  flows on one project. For instance, there can be one work flow for work
+		  packages (small groups of individual topics) and another work flow for final
+		  deliverables. 
+		</p> 
+		<p>A simple work
+		  flow might include: 
+		</p> 
+		<p> 
+		<ul> 
+		   
+			 Authoring 
+			  
+		   
+		   
+			 Editing 
+			  
+		   
+		   
+			 Implementing editing comments 
+			  
+		   
+		   
+			 Client review 
+			  
+		   
+		   
+			 Implementing client review
+				comments 
+			  
+		   
+		   
+			 Final client review 
+			  
+		   
+		   
+			 Release 
+			  
+		   
+		 
+		</ul> 
+		</p><p>Multiple work flows might include: 
+		</p><p> 
+		<ul> 
+		   
+			 Topic development work flow: 
+			  
+				 
+				  Authoring 
+				   
+				 
+				 
+				  Editing 
+				   
+				 
+				 
+				  Implementing editing changes
+					 
+				   
+				 
+				 
+				  Peer review 
+				   
+				 
+				 
+				  Implementing peer review
+					 changes 
+				   
+				 
+				 
+				  Complete 
+				   
+				 
+			  
+			  
+		   
+		   
+			 Deliverable review work flow: 
+			  
+				 
+				  Preparing deliverable for
+					 client review 
+				   
+				 
+				 
+				  Client review 
+				   
+				 
+				 
+				  Implementing client review
+					 comments 
+				   
+				 
+				 
+				  Release 
+				   
+				 
+			  
+			  
+		   
+		 
+		</ul> 
+	 </p></p><p> 
+		<p>Approvals</p> 
+		<p>There are three options available
+		  when approving content in a work package: Approved, Approved with changes, and
+		  Changes Requested. If a reviewer uses Changes requested, then after the author
+		  makes the changes the work package should go back to the reviewer for final
+		  approval. 
+		</p> 
+	  
+	 </p><p> 
+		<p>Work flow example</p> 
+		<p>The following is an example of a
+		  content development work flow with a child work flow to implement multiple peer
+		  reviews. Peer reviews #1, #2, and #3 are Peer review states generated from the
+		  child work flow, and all other states are generated from the parent work flow. 
+		</p> 
+		<p> 
+		  <fig> 
+			 Parent and child work flows with approvals 
+		   
+		</fig> 
+	 </p></p>

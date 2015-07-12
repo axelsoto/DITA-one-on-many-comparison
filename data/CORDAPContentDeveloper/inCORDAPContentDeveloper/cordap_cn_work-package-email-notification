@@ -1,0 +1,192 @@
+<p>Work package assignment notification</p><p>The work package assignment notification email is often your first
+	 point of contact with CORDAP. 
+  </p> 
+	 <p> 
+		<p> Every time a work package is
+		  assigned to you, CORDAP sends you an auto-generated email. This email provides
+		  you with the key details for the work package, such as the step for which you
+		  are responsible, as well as several quick links. 
+		</p> 
+		<p> 
+		   
+			 <p>Add 
+				cordap@innovatia.net to your Safe Senders
+				list in your email program to ensure that email from CORDAP is delivered
+				instead of being identified as suspicious or junk email. 
+			  
+		  </p> 
+		</p><p>Be sure to carefully review the
+		  email. If you have any questions about the assignment, contact the person who
+		  assigned the work package to you. 
+		</p>	<p> 
+		  <fig> 
+			 Sample CORDAP assignment email 
+		   
+		</fig> 
+	 </p></p><p> 
+		<p>Assignment email fields</p> 
+		<p>The following table defines the
+		  fields in the auto-generated assignment notification email sent from CORDAP: 
+		</p> 
+		<p> 
+		<table> 
+		Assignment email fields 
+		 
+			  
+				 
+				  Field 
+				   
+				 
+				 
+				  Description 
+				   
+				 
+			  
+		   
+			  
+				 
+				  Work package 
+				   
+				 
+				 
+				  Link to the work package 
+				   
+				 
+			  
+			  
+				 
+				  State 
+				   
+				 
+				 
+				  Step of the work flow for
+					 which you are responsible 
+				   
+				 
+			  
+			  
+				 
+				  Notes 
+				   
+				 
+				 
+				  Notes added by the work
+					 package creator 
+				   
+				 
+			  
+			  
+				 
+				  Due 
+				   
+				 
+				 
+				  Date which the entire work
+					 flow for the work package must be complete 
+				   
+				 
+			  
+			  
+				 
+				  Assigned 
+				   
+				 
+				 
+				  Date which this step of the
+					 work flow was assigned 
+				   
+				 
+			  
+			  
+				 
+				  Assigned by 
+				   
+				 
+				 
+				  Email link to the person who
+					 assigned the work package 
+				   
+				 
+			  
+			  
+				 
+				  Planned work 
+				   
+				 
+				 
+				  Number of hours estimated to
+					 complete the entire work package 
+				   
+				 
+			  
+			  
+				 
+				  Actual work 
+				   
+				 
+				 
+				  Actual number of hours spent
+					 on the work package 
+				   
+				 
+			  
+			  
+				 
+				  Remaining work 
+				   
+				 
+				 
+				  Number of hours remaining
+					 for the work package 
+				   
+				 
+			  
+			  
+				 
+				  Feature 
+				   
+				 
+				 
+				  Name of the feature to which
+					 the work package is linked 
+				   
+				 
+			  
+			  
+				 
+				  Change 
+				   
+				 
+				 
+				  Name of the change driver to
+					 which the work package is linked 
+				   
+				 
+			  
+			  
+				 
+				  Assets 
+				   
+				 
+				 
+				  Name of the asset to which
+					 the work package is linked 
+				   
+				 
+			  
+			  
+				 
+				  Release 
+				   
+				 
+				 
+				  Link to Work Packages tab
+					 for the release 
+				   
+				 
+			  
+		   
+		 
+		 
+		</table> 
+	 </p></p>

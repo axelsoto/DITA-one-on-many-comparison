@@ -1,0 +1,52 @@
+<p>Reviewing change driver information</p><p>Understand the information added for a change driver. 
+  </p> 
+	  
+		<ul> 
+		   
+			 To edit change drivers, you must
+				have the right permissions. 
+			  
+		   
+		 
+	 </ul> 
+	  
+		<p>Change driver information can be
+		  added to CORDAP, so that it can be linked to work packages and features. Before
+		  you being working on a work package that is linked to a change driver, review
+		  the change driver details to ensure your information is current. 
+		</p> 
+		<p> 
+		   
+			 <p>Using filters in the Work
+				Packages tab, you can easily identify work packages linked to a change driver. 
+			 </p> 
+		   
+		</p>  
+		 
+		   In 
+			 My Products, expand the desired product. 
+		   
+		 
+		 
+		  Click the desired release. 
+		   
+		 
+		 
+		  Click 
+			 Change Drivers. 
+		   
+		  The list of change drivers included in the selected release
+			 appears. 
+		   
+		 
+		 
+		  Click the change driver's name to view its details. 
+		   
+		  If you have permissions, you can also edit the details and click 
+			 Save. 
+		   
+		 
+	  
+	 The change driver
+		details are shown. 
+	 

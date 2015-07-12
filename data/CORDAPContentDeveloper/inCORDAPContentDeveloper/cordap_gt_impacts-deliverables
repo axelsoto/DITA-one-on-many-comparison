@@ -1,0 +1,114 @@
+<p>Know your impacts and deliverables</p><p>For your release, know what is changing the product and what
+	 deliverables are impacted by the changes. 
+  </p> 
+	 <p> When you begin planning a release,
+		you probably ask yourself several questions: 
+	 </p> 
+	 <p> 
+	 <ul> 
+		 
+		  What are the new features for this
+			 release? 
+		   
+		 
+		 
+		  Which topics are being changed? 
+		   
+		 
+		 
+		   Which deliverables are being
+			 changed? 
+		   
+		 
+		 
+		  Are the changes being made all at
+			 once or over several different time periods? 
+		   
+		 
+	  
+	 </ul> 
+	 </p><p>As you begin to
+		answer these questions, you can start adding the features, assets,
+		deliverables, and iterations to CORDAP to begin the content development process
+		for the release. 
+	 </p><p>Ultimately, you are
+		going to create work packages to assign to your team members. When you create
+		the work packages, you can link them back to the items you added here. 
+	 </p><p>During planning, the
+		person responsible for maintaining CORDAP adds information for the features,
+		assets, deliverables, iterations, and change drivers. This information is
+		available to you throughout the duration of the project. It is quite often
+		linked to the work packages assigned to you, making it easy to find the
+		information you need during your piece of the content development. 
+	 </p><p>During planning, the
+		person responsible for maintaining CORDAP adds information for the features,
+		assets, deliverables, iterations, and change drivers. This information is
+		available to you throughout the duration of the project. It is quite often
+		linked to the work packages assigned to you, making it easy to find the
+		information you need during your piece of the content development. 
+	 </p>
+	  
+	 <p>During planning,
+		the person responsible for maintaining CORDAP adds information for the
+		features, assets, deliverables, iterations, and change drivers. This
+		information is available to you throughout the duration of the project. It is
+		quite often linked to the work packages assigned to you, making it easy to find
+		the information you need during your piece of the content development. 
+	 </p> 
+	 <p> 
+		<p>Features</p> 
+		<p>Typically, a release is driven by
+		  features added to a product. These features are most often changes to the
+		  product, either enhancements or new functionality. There is usually source
+		  documentation for the feature explaining the details of the feature. In the
+		  Features tab, you can keep track of each feature and make notes as to where the
+		  source documentation is stored, so that all members of the team can easily find
+		  the information they need. The Features tab also displays all work packages and
+		  change requests related to the feature. 
+		</p> 
+	  
+	 </p><p> 
+		<p>Assets</p> 
+		<p>Assets are considered to be the
+		  content source files (topics or maps) for the product. Use of the Assets tab
+		  requires a CMS connection. By including assets in CORDAP, work packages can be
+		  linked to the files it impacts. This allows the content developer to lock the
+		  source files from within CORDAP. It also enables CORDAP to generate HTML output
+		  of the content for reviewers. 
+		</p> 
+		<p>A deliverable is the item that is
+		  delivered to the client once all the work is completed. It might be a document,
+		  a help set, or a training course. By adding deliverable maps as assets and
+		  identifying them as deliverables, they can link to the work packages that
+		  impact them. Throughout the release, the work package list can be filtered by
+		  deliverable. This shows the status of each work package linked to the
+		  deliverable, so you can see if all the work is completed or what is still in
+		  progress for the selected deliverable. 
+		</p> 
+		
+		<p>The Deliverables dashboard is
+		  populated when an asset, identified as a deliverable, is linked to a work
+		  package. The dashboard provides you with a high level view of the progress
+		  being made for the release. You can drill down from the release-level to view
+		  progress by deliverable, and then by iteration for the deliverable. 
+		</p></p><p> 
+		<p>Iterations</p> 
+		<p>Iterations are used to divide a
+		  release into different time frames. Perhaps you have two features due by the
+		  end of one month and three features due by the end of the next month. By adding
+		  iterations, you can place the required work packages into the appropriate
+		  iteration. The iterations appear with a few key items displayed, including a
+		  general progress state for the iteration. This provides an easy view to help
+		  ensure target dates are met. 
+		</p> 
+	  
+	 </p><p> 
+		<p>Change drivers</p> 
+		<p>Change drivers can also impact your
+		  release for content development. Change drivers can include bug fixes, feature
+		  modifications, or any other adjustments that might not be considered a full
+		  feature. Using the Change Drivers tab, they can be added to CORDAP and then
+		  linked to work packages. 
+		</p> 
+	  
+  </p>

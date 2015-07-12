@@ -1,0 +1,57 @@
+<p>Home page</p><p>The home page is your initial view into CORDAP. 
+  </p> 
+	 <p> 
+		<p> The home page has three sections:
+		  My Products, Recently Viewed, and a main window. Using these areas, you can see
+		  information specific to the products on which you are assigned, work packages
+		  assigned to you, and unassigned work packages that you can assign to yourself. 
+		</p> 
+	  
+	 </p><p> 
+		<p>My Products</p> 
+		<p>In this section of the home page,
+		  you can see all products on which you are assigned a role. By expanding the
+		  product, you see each release for that product. Simply click the release name
+		  to see the release-specific information for that product. 
+		</p> 
+	  
+	 </p><p> 
+		<p>Recently Viewed</p> 
+		<p>This list is a shortcut to the 10
+		  most recent releases you viewed. Instead of accessing your release through 
+		  My Products, you can simply select the release
+		  name in this view to take you directly to the release-specific information. 
+		 
+		</p><p>You can clear the list by clicking 
+		  Clear this list. Clearing your browser cookies
+		  also clears this list. 
+		 
+	 </p> 
+	 </p><p> 
+		<p>Main window</p> 
+		<p>Based on your permissions, there are
+		  different tabs within the main window: My Work, Dashboard, and Resource Usage. 
+		</p> 
+		<p>My Work
+		  displays all work packages assigned to you. From here you can update your work
+		  packages, view your work package history, lock source content, or assign an
+		  unassigned work package to yourself. 
+		 
+		</p><p>The 
+		  Dashboard displays status details for your
+		  products and releases. It shows you status details for a release, iteration,
+		  deliverables, and work packages. Work package time lines provide details on the
+		  progression of work packages throughout the work flows and over a period of
+		  time.
+		 
+		</p><p>The 
+		  Resource Usage tab displays usage information
+		  for the resources on your products. You can view the usage details of the
+		  resources by product, resource, or role. 
+		 
+		</p><p> 
+		  <fig> 
+			 CORDAP home page 
+		   
+		</fig> 
+	 </p></p>

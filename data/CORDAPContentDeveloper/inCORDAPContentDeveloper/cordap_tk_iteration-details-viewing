@@ -1,0 +1,179 @@
+<p>Reviewing iteration information</p><p>Monitor the progress of the work packages in each iteration. 
+  </p> 
+	  
+		<ul> 
+		   
+			  The iteration must be created. 
+			  
+		   
+		   
+			 To edit the information, you must have the right permissions. 
+			  
+		   
+		 
+	 </ul> 
+	  
+		<p> Monitor the overall progress of the
+		  release iterations. Review which work packages are complete, which are not, and
+		  which, if any, are overdue. 
+		</p> 
+	  
+	  
+		 
+		   In 
+			 My Products, expand the desired product. 
+		   
+		 
+		 
+		  Click the desired release. 
+		   
+		 
+		 
+		  Click 
+			 Iterations. 
+		   
+		  The view refreshes to show all iterations. By default, all
+			 work packages not placed into an iteration are shown and are considered to be
+			 unscheduled. 
+		   
+		 
+		 
+		  (Optional) Click directly on an iteration name to change the
+			 details for the iteration. 
+		   
+		 
+		 
+		   Select the box around the desired iteration. 
+		   
+		  The detailed information for the iteration appears, as does
+			 a view of the work packages within the iteration. 
+		   
+		 
+		 
+		  (Optional) Drag and drop work packages from one iteration to
+			 another. 
+		   
+		 
+		 
+		  Click 
+			 Show work package details to see the assignee,
+			 the due date, and the number of planned, actual, and remaining hours. 
+		   
+		  Click 
+			 Hide work package details to remove this
+			 information from the view. 
+		   
+		 
+	  
+	  
+		<p>Iteration information is shown for
+		  your review. 
+		</p> 
+		<p> 
+		<table> 
+		Iteration progress fields 
+		 
+			  
+				 
+				  Field 
+				   
+				 
+				 
+				  Description 
+				   
+				 
+			  
+		   
+			  
+				 
+				  Start 
+				   
+				 
+				 
+				  Date on which the iterations
+					 starts 
+				   
+				 
+			  
+			  
+				 
+				  End 
+				   
+				 
+				 
+				  Date on which the iteration
+					 ends 
+				   
+				 
+			  
+			  
+				 
+				  Number of packages 
+				   
+				 
+				 
+				  Total number of work
+					 packages included in the iteration 
+				   
+				 
+			  
+			  
+				 
+				  In progress 
+				   
+				 
+				 
+				  Number of work packages in
+					 progress 
+				   
+				 
+			  
+			  
+				 
+				  Complete 
+				   
+				 
+				 
+				  Number of work packages
+					 completed 
+				   
+				 
+			  
+			  
+				 
+				  Time estimate 
+				   
+				 
+				 
+				  Total number of hours
+					 planned work for all work packages 
+				   
+				 
+			  
+			  
+				 
+				  Time spent 
+				   
+				 
+				 
+				  Total number of hours worked
+					 for all work packages 
+				   
+				 
+			  
+			  
+				 
+				  Time remaining 
+				   
+				 
+				 
+				  Total number of hours
+					 remaining work for all work packages 
+				   
+				 
+			  
+		   
+		 
+		 
+		</table> 
+	 </p>

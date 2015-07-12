@@ -1,0 +1,293 @@
+<p>Creating properties</p><p>Properties identify key information about work packages and
+	 content within the product. 
+  </p> 
+	  
+		<p>Create properties so that they can
+		  be applied to work packages or assets. 
+		</p>
+		<p>Properties identify key information
+		  about a work package or an asset that has been added to CORDAP. For instance,
+		  if you create a Name property for content units, you can designate that
+		  property to be used as its name in CORDAP. So if a user adds a name for a topic
+		  or map, using the Properties tab for the asset, then CORDAP uses that name
+		  instead of the filename when referring to the asset. 
+		</p> 
+		 
+		<p> 
+		   
+			 <p>Properties created in CORDAP and
+				applied to content units are not carried over into the CMS. When you set a
+				property for a topic or bookmap, there is no change to the actual file in the
+				CMS. The property is set in CORDAP only. 
+			 </p> 
+		   
+		</p> 
+		 
+		   In 
+			 My Products, expand the desired product. 
+		   
+		 
+		 
+		  Click the desired release. 
+		   
+		 
+		 
+		  Click 
+			 General. 
+		   
+		 
+		 
+		   Click 
+			 Properties. 
+		   
+		 
+		 
+		  Click 
+			 Create a new property. 
+		   
+		   
+			 <p>The 
+				Create a new property window is displayed. 
+			  
+		  </p> 
+		 
+		  Type a name for the property. 
+		   
+		 
+		 
+		  Type a description for the property that will be useful when a
+			 user must use the property. 
+		   
+		 
+		 
+		  Type a group for the property. 
+		   
+		 
+		 
+		  Select a data type for the property. 
+		   
+		   
+			 <p>This is the data format used
+				for the property. 
+			 </p> 
+			 <p> 
+			 <table> 
+			 Data types for Properties 
+			  
+				   
+					  
+						Selecting ... 
+						 
+					  
+					  
+						Results in a ... 
+						 
+					  
+				   
+				 
+				   
+					  
+						Text 
+						 
+					  
+					  
+						 text box for the user
+						  to enter text. 
+						 
+					  
+				   
+				   
+					  
+						Number 
+						 
+					  
+					  
+						 text box for the user
+						  to enter numbers. 
+						 
+					  
+				   
+				   
+					  
+						Date 
+						 
+					  
+					  
+						date box and calendar. 
+						 
+					  
+				   
+				   
+					  
+						DateTime 
+						 
+					  
+					  
+						date box, calendar, and
+						  time. 
+						 
+					  
+				   
+				   
+					  
+						YesNo 
+						 
+					  
+					  
+						radio button list with
+						  Yes or No options. 
+						 
+					  
+				   
+				   
+					  
+						Phone 
+						 
+					  
+					  
+						 text box for the user
+						  to enter a phone number. 
+						 
+					  
+				   
+				   
+					  
+						Email 
+						 
+					  
+					  
+						text box for the user
+						  to enter an email address. 
+						 
+					  
+				   
+				   
+					  
+						User 
+						 
+					  
+					  
+						drop-down selection of
+						  resources assigned to the release. 
+						 
+					  
+				   
+				   
+					  
+						Feature 
+						 
+					  
+					  
+						list of features for
+						  the release 
+						 
+					  
+				   
+				 
+			  
+			  
+			 </table> 
+		  </p> 
+		  Select the item to which the property applies. 
+		   
+		 
+		 
+		  Check options that apply to the property. 
+		   
+		   
+			 <p> 
+			 <table> 
+			 Options for Properties 
+			  
+				   
+					  
+						Option 
+						 
+					  
+					  
+						Description 
+						 
+					  
+				   
+				 
+				   
+					  
+						Required field 
+						 
+					  
+					  
+						Indicates that this
+						  property must be set when working with items to which the property is applied. 
+						 
+					  
+				   
+				   
+					  
+						Password format 
+						 
+					  
+					  
+						??? 
+						   
+						 
+					  
+				   
+				   
+					  
+						Designate as object
+						  name 
+						 
+					  
+					  
+						Sets the value entered
+						  for the property as the object's name in CORDAP. 
+						 
+					  
+				   
+				   
+					  
+						Select from a list of
+						  values 
+						 
+					  
+					  
+						Selecting this box
+						  allows you to set the list of values that the user can select when setting this
+						  property. 
+						 
+					  
+				   
+				 
+			  
+			  
+			 </table> 
+		  </p> 
+		  Click 
+			 Save. 
+		   
+		 
+	  
+		<p> The property is created and can be
+		  applied when using the item type for which the property is set. 
+		</p> 
+	  
+	 
+		<p>Property created for a work package</p>
+		<p>You might want to add a property to indicate the priority level for
+		  work packages. You can create a 
+		  Priority property, set the Data type as 
+		  Number, apply it to 
+		  Work Packages, click 
+		  Select from a list of values, and then enter the
+		  values that you want included as options for property. Then when work packages
+		  are created, the 
+		  Priority can be set in the work packages's
+		  Properties tab. Using this information, the content developers know which work
+		  packages are the highest priority and can address them first.
+		
+		</p><p>
+		  <fig>
+			 Priority property created for work packages 
+		  
+		</fig> 
+	 </p>

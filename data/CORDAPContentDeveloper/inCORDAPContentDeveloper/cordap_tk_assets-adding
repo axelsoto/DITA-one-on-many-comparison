@@ -1,0 +1,65 @@
+<p>Adding an asset</p><p>Add CMS content so that you can link it to work packages,
+	 features, or change drivers. 
+  </p> 
+	  
+		<ul> 
+		   
+			  A CMS connection is required. 
+			  
+		   
+		 
+	 </ul> 
+	  
+		<p>If you are going to link a work
+		  package, feature, or change driver to CMS content, then the content must first
+		  be added as an asset to CORDAP. 
+		</p> 
+		<p> 
+		   
+			 <p>Adding deliverables as assets
+				and linking them to work packages gives you the ability to track the progress
+				on each individual deliverable. Using filters in the Work Packages tab, you can
+				easily identify work packages linked to a deliverable. 
+			 </p> 
+		   
+		</p>  
+		 
+		   In 
+			 My Products, expand the desired product. 
+		   
+		 
+		 
+		  Click the desired release. 
+		   
+		 
+		 
+		  Click 
+			 Assets. 
+		   
+		 
+		 
+		  Click 
+			 Select content. 
+		   
+		  CORDAP connects to the CMS connection and displays the CMS
+			 content folders. 
+		   
+		 
+		 
+		  Scroll through the list of content and select the content you want
+			 to add to CORDAP. 
+		   
+		 
+		 
+		  Click 
+			 Save. 
+		   
+		 
+	  
+	  
+		<p> The CMS content is added as an
+		  asset and is available for linking to work packages, features, or change
+		  drivers. 
+		</p> 
+	  
+  

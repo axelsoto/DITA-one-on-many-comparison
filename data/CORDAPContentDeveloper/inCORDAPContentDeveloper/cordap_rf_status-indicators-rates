@@ -1,0 +1,94 @@
+<p>Status indicators</p><p>Understand the status indicators used through CORDAP. 
+  </p> 
+	 <p> 
+		<p>Description</p> 
+		<p> For many items throughout CORDAP,
+		  colours are used to indicate the current status of an item. Items include
+		  overall release, iterations, work packages, and resource allocation. The
+		  following table describes the meanings of the colours used to indicate status. 
+		</p> 
+		<p> 
+		<table> 
+		Status indicator colours 
+		 
+		   
+		   
+		   
+		   
+			  
+				 
+				   Colour 
+				   
+				 
+				 
+				   Status 
+				   
+				 
+				 
+				   Description 
+				   
+				 
+			  
+		   
+		   
+			  
+				 
+				   Green 
+				   
+				 
+				 
+				   On track 
+				   
+				 
+				 
+				  Based on remaining work and
+					 the time left to complete the work, due date should be met. 
+				   
+				  >= 80%
+					 
+				   
+				 
+			  
+			  
+				 
+				   Yellow 
+				   
+				 
+				 
+				   Warning 
+				   
+				 
+				 
+				  Hours of remaining work is
+					 slightly more than the working hours left until the due date—meeting the due
+					 date is in jeopardy. 
+				   
+				   <
+					 80% >= 65% 
+				   
+				 
+			  
+			  
+				 
+				  Red 
+				   
+				 
+				 
+				  Critical 
+				   
+				 
+				 
+				   <
+					 65% 
+				   
+				  Hours of remaining work is
+					 significantly more than the working hours left until the due date. Expect the
+					 completion of the work to be overdue. 
+				   
+				 
+			  
+		   
+		 
+		 
+		</table> 
+	 </p></p>
